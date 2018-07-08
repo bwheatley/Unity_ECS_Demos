@@ -8,16 +8,19 @@ namespace Hybrid.Systems
 {
     public class PlayerInputSystem : ComponentSystem
     {
-        private struct Group {
+        private struct Group
+        {
             public PlayerInput PlayerInput;
         }
 
-        protected override void OnUpdate() {
+        protected override void OnUpdate()
+        {
 
-            foreach (var entity in GetEntities<Group>()) {
+            foreach (var entity in GetEntities<Group>())
+            {
                 entity.PlayerInput.Horizontal = Input.GetAxis("Horizontal");
             }
 
         }
-    } 
+    }
 }

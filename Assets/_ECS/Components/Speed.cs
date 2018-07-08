@@ -1,13 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using Unity.Entities;
 
-
-
-namespace Hybrid.Components
+namespace Pure.Components
 {
-    public class Speed : MonoBehaviour
-    {
+    public struct Speed : IComponentData {
         public float Value;
     }
 

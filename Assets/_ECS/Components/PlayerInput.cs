@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.Entities;
 using UnityEngine;
 
-namespace Hybrid.Components
+namespace Pure.Components
 {
-    public class PlayerInput : MonoBehaviour
-    {
+
+    public struct PlayerInput : IComponentData {
         public float Horizontal;
     }
 

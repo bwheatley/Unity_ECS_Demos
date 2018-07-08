@@ -8,16 +8,19 @@ namespace Hybrid.Systems
     public class PlayerMovementSystem : ComponentSystem
     {
 
-        private struct Group {
+        private struct Group
+        {
             public Transform Transform;
             public PlayerInput PlayerInput;
             public Speed Speed;
         }
 
 
-        protected override void OnUpdate() {
+        protected override void OnUpdate()
+        {
 
-            foreach (var entity in GetEntities<Group>()) {
+            foreach (var entity in GetEntities<Group>())
+            {
                 var position = entity.Transform.position;
                 var rotation = entity.Transform.rotation;
 

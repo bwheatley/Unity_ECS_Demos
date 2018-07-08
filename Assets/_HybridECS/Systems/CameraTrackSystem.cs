@@ -8,13 +8,16 @@ namespace Hybrid.Systems
 {
     public class CameraTrackSystem : ComponentSystem
     {
-        private struct Group {
+        private struct Group
+        {
             public CameraTarget CameraTarget;
         }
 
 
-        protected override void OnUpdate() {
-            foreach (var entity in GetEntities<Group>()) {
+        protected override void OnUpdate()
+        {
+            foreach (var entity in GetEntities<Group>())
+            {
                 entity.CameraTarget.CameraTransform.position =
                     entity.CameraTarget.PlayerTransform.position + entity.CameraTarget.offset;
             }
