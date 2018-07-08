@@ -1,0 +1,2 @@
+C:\unity\ecs_demo\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+C:\unity\ecs_demo\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
