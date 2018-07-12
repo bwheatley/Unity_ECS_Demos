@@ -8,6 +8,10 @@ using Unity.Transforms;
 
 namespace Pure.Systems
 {
+
+    //TODO Look into the difference between ComponentSystem & JobComponentSystem
+    //TODONE - looked into it componentsystem looks like it's used for hybrid ECS & JobComponentSystem is Pure ECS
+
     public class PlayerMovementSystem : JobComponentSystem
     {
         private struct PlayerMovementJob : IJobProcessComponentData<Speed, PlayerInput, Position> {
