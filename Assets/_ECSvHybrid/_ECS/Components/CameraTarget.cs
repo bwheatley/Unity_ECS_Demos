@@ -15,7 +15,7 @@ namespace Pure.Components
         //Since we're referencing a exisiting class Component use this vs using ComponentDataArray (which allows access to
         //IComponentData)
         [ReadOnly] public ComponentArray<Camera> Camera;
-        public int Length;
+        public readonly int Length;
         public GameObjectArray GameObject;
     }
 

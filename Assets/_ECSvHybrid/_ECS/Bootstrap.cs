@@ -19,12 +19,12 @@ public class Bootstrap : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	    Debug.Log("Started Start");
+	    //Debug.Log("Started Start");
         //Create Archetypes
         CreateArcheTypes();
 
         CreateEntity();
-	    Debug.Log("Ended Start");
+	    //Debug.Log("Ended Start");
 	}
 
 
@@ -64,13 +64,13 @@ public class Bootstrap : MonoBehaviour {
 
         _entityCount++;
 
-        Debug.Log(string.Format("ENTITY Created"));
+        //Debug.Log(string.Format("ENTITY Created"));
 
     }
 
     //We'll start with just 1 archetype for now
     void CreateArcheTypes() {
-        Debug.Log(string.Format("Archetypes Created"));
+        //Debug.Log(string.Format("Archetypes Created"));
 
         var entityManager = World.Active.GetOrCreateManager<EntityManager>();
 
